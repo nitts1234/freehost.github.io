@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>slide</title>
+	<style type="text/css">
+		body
+		{
+			background-color: rgba(27, 31, 34, 0.85);
+		}
+
+		h1
+		{
+			font-size: 2.1rem;
+			text-align: center;
+			color: whitesmoke;
+
+		}
+		
+		.main
+		{ 
+			
+         width: 70%;
+         height: 400px;
+         background-image:url('https://images.unsplash.com/photo-1695747000203-d2746d1954c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNtYWxsJTIwc2l6ZXxlbnwwfHwwfHx8MA%3D%3D');
+         position: absolute;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%,-50%);
+         margin-left: 50PX;
+         background-size: 100% 100%;
+         animation-name: slide;
+         animation-duration: 9s;
+         animation-iteration-count:infinite;
+		}
+		@keyframes slide
+		{
+			0%{background-image: url('https://plus.unsplash.com/premium_photo-1669547518490-6689cc1ee56f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c21hbGwlMjBzaXplfGVufDB8fDB8fHww');border-radius: 0%}
+			10%{
+				background-image: url('https://plus.unsplash.com/premium_photo-1669547518490-6689cc1ee56f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c21hbGwlMjBzaXplfGVufDB8fDB8fHww');}
+			20%{
+				background-image: url('https://images.unsplash.com/photo-1695747002252-9ee66b5edf2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHNtYWxsJTIwc2l6ZXxlbnwwfHwwfHx8MA%3D%3D');
+			}
+			30%{
+				background-image: url('https://images.unsplash.com/photo-1695746999600-2e24d80b2932?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNtYWxsJTIwc2l6ZXxlbnwwfHwwfHx8MA%3D%3D');
+			}
+			40%{
+				background-image: url('https://images.unsplash.com/photo-1695747001190-7bc27a863705?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c21hbGwlMjBzaXplfGVufDB8fDB8fHww');
+			}
+		}
+		.spiner
+		{
+			background-color: orangered;
+			height: 200px;
+			width: 200px;
+			/*position: absolute;
+			top: 700px;
+			left: 400px;*/
+			border-radius: 50%;
+			border: 25px solid white;
+			border-top: 20px solid indigo;
+			animation-name: ani;
+			animation-duration: 2.5s;
+			animation-iteration-count: infinite;
+
+		}
+		@keyframes ani{
+			to{transform: rotate(360deg);}
+
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>Css slider</h1>
+<div class="main"> 
+	
+</div>
+<div class="spiner">Hello
+	
+</div>
+
+
+</body>
+</html>
